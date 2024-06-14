@@ -1,6 +1,6 @@
 <div align="center">
 
-![Linter for Zotero](./96.png)
+![zotMod for Zotero](./96.png)
 
 [![zotero target version](https://img.shields.io/badge/Zotero-7.0.*-green?&logo=zotero&logoColor=CC2936)](https://www.zotero.org)
 [![version](https://img.shields.io/github/v/release/dklsgui/zotMod)](https://github.com/dklsgui/zotMod/releases/)
