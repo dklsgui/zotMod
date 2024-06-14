@@ -3,10 +3,10 @@
 ![Linter for Zotero](./doc/96.png)
 
 [![zotero target version](https://img.shields.io/badge/Zotero-7.0.*-green?&logo=zotero&logoColor=CC2936)](https://www.zotero.org)
-[![version](https://img.shields.io/github/v/release/dklsgui/zotero_update_metadata)](https://github.com/dklsgui/zotero_update_metadata/releases/)
-[![download number](https://img.shields.io/github/downloads/dklsgui/zotero_update_metadata/latest/zotMod.xpi)](https://github.com/dklsgui/zotero_update_metadata/releases/)  
-[![download number for total](https://img.shields.io/github/downloads/dklsgui/zotero_update_metadata/total)](https://github.com/northword/zotero-format-metadata/releases/)
-[![license](https://img.shields.io/github/license/dklsgui/zotero_update_metadata)](https://github.com/dklsgui/zotero_update_metadata/blob/main/LICENSE)
+[![version](https://img.shields.io/github/v/release/dklsgui/zotMod)](https://github.com/dklsgui/zotMod/releases/)
+[![download number](https://img.shields.io/github/downloads/dklsgui/zotMod/latest/zotMod.xpi)](https://github.com/dklsgui/zotMod/releases/)  
+[![download number for total](https://img.shields.io/github/downloads/dklsgui/zotMod/total)](https://github.com/northword/zotero-format-metadata/releases/)
+[![license](https://img.shields.io/github/license/dklsgui/zotMod)](https://github.com/dklsgui/zotMod/blob/main/LICENSE)
 <!-- [![Codacy Badge](https://app.codacy.com/project/badge/Grade/b851796e53724d7aa7c00923955e0f56)](https://app.codacy.com/gh/northword/zotero-format-metadata/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade) -->
 <!-- [![Using Zotero Plugin Template](https://img.shields.io/badge/Using-Zotero%20Plugin%20Template-blue?&logo=github)](https://github.com/windingwind/zotero-plugin-template) -->
 
@@ -67,7 +67,7 @@ In addition to features that update metadata, when you select additional feature
 When you choose to use this feature, `tag-Setting` will appear below, click `add-setting`, fill in the appropriate information (item type, journal/conference name, tag (tag to be added)) and save. When a new entry is added, if the entry type matches and the journal/conference name appears in the journal/conference name of the new entry (it does not need to be exactly the same, just ensure that the configured journal/conference name is a substring of the journal/conference name of the new entry), then the corresponding tag is automatically added.
 ##  3. <a name='Install'></a>Install
 
-1. Go to the [release page](https://github.com/dklsgui/zotero_update_metadata/releases/)  to download [the latest `.xpi` file](https://github.com/dklsgui/zotero_update_metadata/releases/latest/download/zotMod.xpi).
+1. Go to the [release page](https://github.com/dklsgui/zotMod/releases/)  to download [the latest `.xpi` file](https://github.com/dklsgui/zotMod/releases/latest/download/zotMod.xpi).
 2. Then, in Zotero, click `Tools` -> `Add-ons`,and drag the `.xpi` onto the Add-ons window. See [how to install a Zotero addon](https://zotero-chinese.com/user-guide/plugins/about-plugin.html)。
 
 **Note:** The latest version only supports Zotero 7, so you won't be able to use this plugin if you're using Zotero 6.

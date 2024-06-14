@@ -3,10 +3,10 @@
 ![Linter for Zotero](./96.png)
 
 [![zotero target version](https://img.shields.io/badge/Zotero-7.0.*-green?&logo=zotero&logoColor=CC2936)](https://www.zotero.org)
-[![version](https://img.shields.io/github/v/release/dklsgui/zotero_update_metadata)](https://github.com/dklsgui/zotero_update_metadata/releases/)
-[![download number](https://img.shields.io/github/downloads/dklsgui/zotero_update_metadata/latest/zotMod.xpi)](https://github.com/dklsgui/zotero_update_metadata/releases/)  
-[![download number for total](https://img.shields.io/github/downloads/dklsgui/zotero_update_metadata/total)](https://github.com/northword/zotero-format-metadata/releases/)
-[![license](https://img.shields.io/github/license/dklsgui/zotero_update_metadata)](https://github.com/dklsgui/zotero_update_metadata/blob/main/LICENSE)
+[![version](https://img.shields.io/github/v/release/dklsgui/zotMod)](https://github.com/dklsgui/zotMod/releases/)
+[![download number](https://img.shields.io/github/downloads/dklsgui/zotMod/latest/zotMod.xpi)](https://github.com/dklsgui/zotMod/releases/)  
+[![download number for total](https://img.shields.io/github/downloads/dklsgui/zotMod/total)](https://github.com/northword/zotero-format-metadata/releases/)
+[![license](https://img.shields.io/github/license/dklsgui/zotMod)](https://github.com/dklsgui/zotMod/blob/main/LICENSE)
 
 本 README 还适用于以下语言：:cn: 简体中文 | [:gb: English](../README.md)
 
@@ -67,9 +67,9 @@
 当选择使用这个功能时，下方会出现`标签设置`，点击`添加配置`，填入相应的信息(条目类型，期刊/会议名，标签(要添加的标签))并保存。当加入新的条目时，如果条目类型能够匹配并且期刊/会议名在新条目的期刊/会议名中出现(不需要完全一样，只需要保证配置的期刊/会议名是新条目的期刊/会议名的子串即可)，那么就会自动添加相应的标签。
 ##  3. <a name='-1'></a>安装
 
-1. 前往 [发布页](https://github.com/dklsgui/zotero_update_metadata/releases/) 下载 [最新的 `.xpi` 文件](https://github.com/dklsgui/zotero_update_metadata/releases/latest/download/zotMod.xpi).
+1. 前往 [发布页](https://github.com/dklsgui/zotMod/releases/) 下载 [最新的 `.xpi` 文件](https://github.com/dklsgui/zotMod/releases/latest/download/zotMod.xpi).
    <!-- - 如果你无法顺利的访问 GitHub，可以前往以下几个镜像站下载本插件。
-     - [GitHub Proxy](https://ghproxy.com/?q=https://github.com/dklsgui/zotero_update_metadata/releases/latest/download/zotMod.xpi)
+     - [GitHub Proxy](https://ghproxy.com/?q=https://github.com/dklsgui/zotMod/releases/latest/download/zotMod.xpi)
      - [Zotero 插件镜像下载 - Zotero 中文社区](https://plugins.zotero-chinese.com/)
    - 如果你使用 FireFox ，请在 XPI 文件的链接上右击，选择“另存为...”。 -->
 2. 在 Zotero 中，点击菜单 `工具` -> `附加组件`，将下载的 `.xpi` 文件拖入 Zotero 插件管理器页面。参阅 [如何安装 Zotero 插件](https://zotero-chinese.com/user-guide/plugins/about-plugin.html)。
