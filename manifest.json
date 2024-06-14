@@ -1,0 +1,20 @@
+{
+	"manifest_version": 2,
+	"name": "ZotMod",
+	"version": "1.0.0",
+	"description": "update metadata for zotero",
+	"author": "dklsgui",
+	"homepage_url": "https://github.com/dklsgui/zotero_update_metadata",
+	"icons": {
+		"48": "chrome/content/icons/48.png",
+		"96": "chrome/content/icons/96.png"
+	},
+	"applications": {
+		"zotero": {
+			"id": "zotMod@dklsgui.com",
+			"update_url": "https://github.com/dklsgui/zotero_update_metadata/blob/main/update.json",
+			"strict_min_version": "6.999",
+			"strict_max_version": "7.0.*"
+		}
+	}
+}

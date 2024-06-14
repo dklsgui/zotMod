@@ -1,0 +1,17 @@
+{
+    "addons": {
+      "zotero-update-meta-data@dklsgui.cn": {
+        "updates": [
+          {
+            "version": "1.0.0",
+            "update_link": "https://github.com/dklsgui/zotero_update_metadata/releases/download/v1.0.0/zotMod.xpi",
+            "applications": {
+              "zotero": {
+                "strict_min_version": "7.0.0-beta.68"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }

@@ -1,0 +1,34 @@
+zotMod-update-doi = 
+    .label = 更新DOI
+zotMod-update-meta-data = 
+    .label = 更新元数据
+zotMod-update-add-tag = 
+    .label = 添加标签
+
+zotMod-preferences-itemtype-choose = 允许更新的条目类型
+zotMod-preferences-setting = 设置
+zotMod-preferences-other-function = 其他功能
+zotMod-preferences-tags-setting = 标签设置
+
+zotMod-preferences-setting-timeout = 论文检索超时时间
+zotMod-preferences-itemtype-journal = 
+    .label = 期刊文章
+zotMod-preferences-itemtype-conference = 
+    .label = 会议论文
+zotMod-preferences-itemtype-preprint = 
+    .label = 预印本
+zotMod-preferences-add-tags = 
+    .label = 自定义添加标签
+zotMod-preferences-add-tags-setting = 
+    .label = 添加配置
+zotMod-preferences-item-type = 条目类型
+zotMod-preferences-name = 期刊/会议名
+zotMod-preferences-tag = 标签
+zotMod-preferences-operation = 操作
+zotMod-preferences-tags-export = 
+    .label = 导出配置
+zotMod-preferences-tags-import = 
+    .label = 导入配置
+zotMod-preferences-tag-delete = 删除
+zotMod-preferences-tag-edit = 编辑
+zotMod-preferences-tag-save = 保存

@@ -1,0 +1,64 @@
+<linkset>
+	<html:link rel="localization" href="update-meta-data.ftl" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+	<!-- <html:link rel="stylesheet" href="chrome://zotMod/content/preference/preferences.css"/> -->
+	<!-- <html:link rel="script" href="chrome://zotMod/content/preference/preferences.js"/> -->
+</linkset>
+<vbox id="zotMod-prefpane" onload="init()">
+	<groupbox class="main-section">
+		<label>
+			<html:h2 data-l10n-id="zotMod-preferences-itemtype-choose"></html:h2>
+		</label>
+		<checkbox data-l10n-id="zotMod-preferences-itemtype-journal" preference="extensions.zotMod.journalArticle"></checkbox>
+		<checkbox data-l10n-id="zotMod-preferences-itemtype-conference" preference="extensions.zotMod.conferencePaper"></checkbox>
+		<checkbox data-l10n-id="zotMod-preferences-itemtype-preprint" preference="extensions.zotMod.preprint"></checkbox>
+		<label>
+			<html:h2 data-l10n-id="zotMod-preferences-setting"></html:h2>
+		</label>
+		<hbox>
+			<html:span data-l10n-id="zotMod-preferences-setting-timeout"></html:span>
+			<html:input type="text" preference="extensions.zotMod.timeout" style="height: 20px;line-height: 100%;"></html:input>
+			<html:span>ms</html:span>
+		</hbox>
+		<label>
+			<html:h2 data-l10n-id="zotMod-preferences-other-function"></html:h2>
+		</label>
+		<checkbox data-l10n-id="zotMod-preferences-add-tags" preference="extensions.zotMod.add_tags" onclick="visible_table(true)"></checkbox>
+		<html:div id="zotMod-preferences-tags-setting-function">
+			<label>
+				<html:h2 data-l10n-id="zotMod-preferences-tags-setting"></html:h2>
+			</label>
+			<!-- 
+				table相关信息:
+					Width: 578
+				类型列相关信息:
+					Width: 20%
+					Height: 20
+				期刊/会议列相关信息:
+					Width: 30%
+					Height: 20
+			-->
+			<html:div id="zotMode-preferences-tags-setting">
+				<html:table border="1px solid #3399cc" cellspacing="0" cellpadding="0">
+					<html:thead>
+						<html:tr>																							
+							<html:th data-l10n-id="zotMod-preferences-item-type" width="20%" style="max-width: 89px;"></html:th>
+							<html:th data-l10n-id="zotMod-preferences-name" width="30%"></html:th>
+							<html:th data-l10n-id="zotMod-preferences-tag" width="30%"></html:th>
+							<html:th data-l10n-id="zotMod-preferences-operation" width="20%" style="max-width: 89px;"></html:th>
+						</html:tr>
+					</html:thead>
+					<html:tbody id="zotMod-preferences-tags-tbody">
+
+					</html:tbody>
+				</html:table>
+				<hbox>
+					<button data-l10n-id="zotMod-preferences-add-tags-setting" id="zotMod-preferences-add-tags-setting" onclick="add_tag_setting()"></button>
+					<button data-l10n-id="zotMod-preferences-tags-export" id="zotMod-preferences-tags-export" onclick="tag_config_export()"></button>
+					<button data-l10n-id="zotMod-preferences-tags-import" id="zotMod-preferences-tags-import" onclick="import_tag_config.click()"></button>
+				</hbox>
+				<html:input type="file" id="import_tag_config" onchange="tag_config_import(this)" style="display:none;"></html:input>
+			</html:div>
+		</html:div>
+	</groupbox>
+</vbox>

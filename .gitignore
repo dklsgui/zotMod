@@ -1,0 +1,22 @@
+build
+logs
+node_modules
+package-lock.json
+# pnpm-lock.yaml
+yarn.lock
+zotero-cmd.json
+
+# libs
+**/libs/**
+**/abbrevIso*
+
+# tmp
+**/*.bak
+**/*.new
+**/examples.ts
+# **/test.js
+**/*test*.*
+
+# ts 编译的 js
+src/**/*.js
+*.xpi

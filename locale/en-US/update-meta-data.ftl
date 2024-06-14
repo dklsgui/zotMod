@@ -1,0 +1,34 @@
+zotMod-update-doi = 
+    .label = Update DOI
+zotMod-update-meta-data = 
+    .label = Update Meta Data
+zotMod-update-add-tag = 
+    .label = Add Tag
+
+zotMod-preferences-itemtype-choose = Choose Updte ItemType
+zotMod-preferences-setting = Setting
+zotMod-preferences-other-function = other function
+zotMod-preferences-tags-setting = tags-setting
+
+zotMod-preferences-setting-timeout = Paper retrieval timeout
+zotMod-preferences-itemtype-journal = 
+    .label = journal
+zotMod-preferences-itemtype-conference = 
+    .label = conference
+zotMod-preferences-itemtype-preprint = 
+    .label = preprint
+zotMod-preferences-add-tags = 
+    .label = Custom add tags
+zotMod-preferences-add-tags-setting = 
+    .label = add setting
+zotMod-preferences-item-type = item type
+zotMod-preferences-name = journal/conference name
+zotMod-preferences-tag = tag
+zotMod-preferences-operation = operation
+zotMod-preferences-tags-export = 
+    .label = Export
+zotMod-preferences-tags-import = 
+    .label = import
+zotMod-preferences-tag-delete = del
+zotMod-preferences-tag-edit = edit
+zotMod-preferences-tag-save = save

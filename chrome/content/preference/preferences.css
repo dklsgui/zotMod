@@ -1,0 +1,39 @@
+#zotMode-preferences-tags-setting table {
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+}
+
+#zotMode-preferences-tags-setting tr,#zotMode-preferences-tags-setting th,#zotMode-preferences-tags-setting td,#zotMode-preferences-tags-setting input,#zotMode-preferences-tags-setting button {
+    margin: 0px;
+    padding: 0px;
+}
+
+#zotMode-preferences-tags-setting tbody button {
+    width: 32%;
+    height: 90%;
+    line-height: 90%;
+    text-align: center;
+}
+
+#zotMode-preferences-tags-setting td, #zotMode-preferences-tags-setting button, #zotMode-preferences-tags-setting input {
+    height: 20px;
+}
+
+#zotMod-preferences-add-tags-setting {
+    width: 60px;
+    height: 30px;
+}
+
+#zotMode-preferences-tags-setting tbody input{
+    border: 0px;
+    outline: none;
+    width: 90%;
+}
+
+#zotMod-preferences-add-tags-setting, #zotMod-preferences-tags-export, #zotMod-preferences-tags-import {
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
