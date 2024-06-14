@@ -5,10 +5,9 @@
 [![zotero target version](https://img.shields.io/badge/Zotero-7.0.*-green?&logo=zotero&logoColor=CC2936)](https://www.zotero.org)
 [![version](https://img.shields.io/github/v/release/dklsgui/zotMod)](https://github.com/dklsgui/zotMod/releases/)
 [![download number](https://img.shields.io/github/downloads/dklsgui/zotMod/latest/zotMod.xpi)](https://github.com/dklsgui/zotMod/releases/)  
-[![download number for total](https://img.shields.io/github/downloads/dklsgui/zotMod/total)](https://github.com/northword/zotero-format-metadata/releases/)
+[![download number for total](https://img.shields.io/github/downloads/dklsgui/zotMod/total)](https://github.com/dklsgui/zotMod/releases/)
 [![license](https://img.shields.io/github/license/dklsgui/zotMod)](https://github.com/dklsgui/zotMod/blob/main/LICENSE)
-<!-- [![Codacy Badge](https://app.codacy.com/project/badge/Grade/b851796e53724d7aa7c00923955e0f56)](https://app.codacy.com/gh/northword/zotero-format-metadata/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade) -->
-<!-- [![Using Zotero Plugin Template](https://img.shields.io/badge/Using-Zotero%20Plugin%20Template-blue?&logo=github)](https://github.com/windingwind/zotero-plugin-template) -->
+
 
 This README is also available in：[:cn: 简体中文](./doc/README-zh.md) | :gb: English
 

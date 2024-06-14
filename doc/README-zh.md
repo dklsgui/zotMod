@@ -5,7 +5,7 @@
 [![zotero target version](https://img.shields.io/badge/Zotero-7.0.*-green?&logo=zotero&logoColor=CC2936)](https://www.zotero.org)
 [![version](https://img.shields.io/github/v/release/dklsgui/zotMod)](https://github.com/dklsgui/zotMod/releases/)
 [![download number](https://img.shields.io/github/downloads/dklsgui/zotMod/latest/zotMod.xpi)](https://github.com/dklsgui/zotMod/releases/)  
-[![download number for total](https://img.shields.io/github/downloads/dklsgui/zotMod/total)](https://github.com/northword/zotero-format-metadata/releases/)
+[![download number for total](https://img.shields.io/github/downloads/dklsgui/zotMod/total)](https://github.com/dklsgui/zotMod/releases/)
 [![license](https://img.shields.io/github/license/dklsgui/zotMod)](https://github.com/dklsgui/zotMod/blob/main/LICENSE)
 
 本 README 还适用于以下语言：:cn: 简体中文 | [:gb: English](../README.md)
