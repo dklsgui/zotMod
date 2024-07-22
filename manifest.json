@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "ZotMod",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "update metadata for zotero",
 	"author": "dklsgui",
 	"homepage_url": "https://github.com/dklsgui/zotMod",
