@@ -52,8 +52,10 @@ Zotero.zotMod.tag = Object.assign(Zotero.zotMod.tag, {
             Zotero.zotMod.tag.zotMod_notifierID = Zotero.Notifier.registerObserver({
                 notify: async (event, type, ids, extraData) => {
                     if(event == "add" && type == "item"){
-                        let item = Zotero.Items.get(ids)[0];
-                        this.addTag(item);
+                        setTimeout(() => {
+                            let item = Zotero.Items.get(ids)[0];
+                            this.addTag(item);
+                        },1000);
                     }
                 }
             },["item"],["add"]);
