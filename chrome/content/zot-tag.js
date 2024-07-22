@@ -33,6 +33,14 @@ Zotero.zotMod.tag = Object.assign(Zotero.zotMod.tag, {
     addTag(item){
         let itemType = item.itemType;
         let publicationTitle = item.getField(Zotero.zotMod.schema[itemType].publicationTitle);
+        if(itemType == "conferencePaper"){
+            if(publicationTitle == ""){
+                publicationTitle = item.getField("conferenceName");
+                item.setField(Zotero.zotMod.schema[itemType].publicationTitle,publicationTitle);
+            }else if(item.getField("conferenceName") == ""){
+                item.setField("conferenceName",publicationTitle);
+            }
+        }
         let labels = []
         for(let name in Zotero.zotMod.tag.config_tags[itemType]){
             if(publicationTitle.toLowerCase().includes(name.toLowerCase())){
@@ -42,10 +50,10 @@ Zotero.zotMod.tag = Object.assign(Zotero.zotMod.tag, {
                 }
             }
         }
-        item.saveTx();
         if(labels.length > 0){
             Zotero.zotMod.dialogs.publishSuccess("标签添加成功",`为${item.getField("title")}添加了标签:${labels.join(",")}`);
         }
+        item.saveTx();
     },
     registerObserver() {
         if(Zotero.zotMod.tag.zotMod_notifierID === null){
@@ -58,7 +66,7 @@ Zotero.zotMod.tag = Object.assign(Zotero.zotMod.tag, {
                         },1000);
                     }
                 }
-            },["item"],["add"]);
+            },["item"]);
         }
     },
     unregisterObserver() {
