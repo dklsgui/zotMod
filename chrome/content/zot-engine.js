@@ -47,10 +47,17 @@ Crossref = {
         }
         resp = await resp.text();
         paperInfo = resp.match(/<td class="item-data"[\W\w]*<\/td>/i)
+        let doi = paperInfo[0].match(/<a[\W\w]+?(10.[\W\w]+?)\"/i)[1].trim()
+        if ("arxiv" in doi.toLowerCase()){
+            throw new Error({
+                status: 404,
+                msg: `${title}查询不到doi`
+            });
+        }
         return {
             status: 200,
             msg: {
-                "doi":paperInfo[0].match(/<a[\W\w]+?(10.[\W\w]+?)\"/i)[1].trim(),
+                "doi":doi,
                 "title":paperInfo[0].match(/<p class=\"lead\">([\W\w]+?)<\/p>/i)[1].trim(),
                 "author":paperInfo[0].match(/<p class=\"expand\">([\W\w]+?)<\/p>/i)[1].trim(),
             }
@@ -81,12 +88,19 @@ ResearchRabbit = {
         let doi = "";
         if(typeof(data.data[0].externalIds.DOI) != "undefined"){
             doi = data.data[0].externalIds.DOI;
-        }else if(typeof(data.data[0].externalIds.ArXiv) != "undefined"){
-            doi = data.data[0].externalIds.ArXiv;
         }
+        // }else if(typeof(data.data[0].externalIds.ArXiv) != "undefined"){
+        //     doi = data.data[0].externalIds.ArXiv;
+        // }
         let author = ""
         for(let a of data.data[0].authors){
             author += a.name + " ";
+        }
+        if ("arxiv" in doi.toLowerCase() || doi == ""){
+            throw new Error({
+                status: 404,
+                msg: `${title}查询不到doi`
+            });
         }
         return {
             status: resp.status,
