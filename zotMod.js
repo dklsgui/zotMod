@@ -139,7 +139,7 @@ Zotero.zotMod = Object.assign(Zotero.zotMod , {
                                 Zotero.zotMod.dialogs.publishError("更新DOI失败", response.msg);
                             }
                         })
-            }else{
+            } else {
                 count++;
                 failCount++;
             }

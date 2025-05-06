@@ -79,10 +79,24 @@ ResearchRabbit = {
         }
         data = await resp.json();
         let doi = "";
-        if(typeof(data.data[0].externalIds.DOI) != "undefined"){
+        // if(typeof(data.data[0].externalIds.DOI) != "undefined" && data.data[0].externalIds.DOI.toLowerCase().indexOf("arxiv") === -1){
+        //     doi = data.data[0].externalIds.DOI;
+        // } else if(typeof(data.data[0].externalIds.ArXiv) != "undefined"){
+        //     // doi = data.data[0].externalIds.ArXiv;
+        //     Zotero.zotMod.logger.log(`${title} 查询的DOI是ArXiv 2`);
+        //     throw new Error({
+        //         status: 404,
+        //         msg: `ResearchRabbit ${title}查询的文献是ArXiv`
+        //     });
+        // }
+        // 如果查询结果中存在DOI字段，并且该DOI不是ArXiv，则返回该DOI，否则抛出异常
+        if(typeof(data.data[0].externalIds.DOI) != "undefined" && data.data[0].externalIds.DOI.toLowerCase().indexOf("arxiv") === -1){
             doi = data.data[0].externalIds.DOI;
-        }else if(typeof(data.data[0].externalIds.ArXiv) != "undefined"){
-            doi = data.data[0].externalIds.ArXiv;
+        } else {
+            throw new Error({
+                status: 404,
+                msg: `ResearchRabbit ${title}查询的文献失败`
+            });
         }
         let author = ""
         for(let a of data.data[0].authors){

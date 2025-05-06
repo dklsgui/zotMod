@@ -21,7 +21,7 @@ async function registerPrefs(id, rootURI){
 }
 
 async function install(data, reason) {
-    log("install");
+    // log("install");
 }
 
 // 插件启动时调用
@@ -46,12 +46,12 @@ async function shutdown(data, reason) {
         Zotero.zotMod.tag.unregisterObserver();
     }
     Zotero.zotMod = null;
-    log("shutdown");
+    // log("shutdown");
 }
 
 // 插件被卸载时调用
 async function uninstall(data, reason) {
-    log("uninstall");
+    // log("uninstall");
 }
 
 // Zotero 主窗口加载完毕时调用

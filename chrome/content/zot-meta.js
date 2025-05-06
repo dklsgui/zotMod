@@ -14,8 +14,8 @@ Zotero.zotMod.meta = Object.assign(Zotero.zotMod.meta, {
             return "item is empty";
         }
         // data = await this.searchPaper(item.getField("title"))
-        data = await Zotero.zotMod.engine.searchByTitle(item.getField("title"));
         if(item.itemType == "preprint" || item.getField("DOI") == ""){
+            data = await Zotero.zotMod.engine.searchByTitle(item.getField("title"));
             if(data.status == 200){
                 let doi = data.msg.doi;
                 if(doi != "") {
@@ -25,22 +25,16 @@ Zotero.zotMod.meta = Object.assign(Zotero.zotMod.meta, {
                         "status": 200,
                         "msg":`${item.getField("title")}的DOI已更新为${doi}`
                     }
-                }else{
-                    return {
-                        "status": 404,
-                        "msg":`${item.getField("title")}查询不到doi`
-                    }
-                }
-            }else{
-                return {
-                    "status": 404,
-                    "msg":`${item.getField("title")}查询不到doi`
                 }
             }
-        }else{
+            return {
+                "status": 404,
+                "msg":`${item.getField("title")}查询不到doi`
+            }
+        } else {
             return {
                 "status": 301,
-                "msg":`${item.getField("title")}非arXiv且已有DOI`
+                "msg":`${item.getField("title")}非arXiv或已有DOI`
             }
         }
     },
